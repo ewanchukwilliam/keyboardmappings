@@ -45,7 +45,7 @@
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6			 &kp N7    &kp N8    &kp N9    &kp N0      &kp DEL
    &kp CAPS   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT		 &kp DOWN  &kp UP    &kp RIGHT &trans      &kp RET
    &trans     &bt BT_CLR   &trans       &trans       &trans       &bootloader    &bootloader &kp PG_DN &kp PG_UP &trans    &trans      &trans
-                                    &kp LGUI     &trans  &kp SPACE      &kp RET  &trans   &trans
+                                    &kp LGUI     &trans  &kp SPACE      &kp RET  &to 3   &trans
                         >;
                 };
 
@@ -59,8 +59,23 @@
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &kp F1   &kp F2 &kp F3   &kp F4   &kp F5      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &kp F6   &kp F7 &kp F8   &kp F9   &kp F10     &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                             &kp LGUI &to 3   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
+
+                default_gaming_layer {
+// -----------------------------------------------------------------------------------------
+// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
+//                    | LALT| LWR | RET |   | SPC | RSE  | ALT |
+                        bindings = <
+   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                  &kp RET &to 0 &kp SPACE   &kp RETURN &to 0 &kp RALT
+                        >;
+                };
+
         };
 };
