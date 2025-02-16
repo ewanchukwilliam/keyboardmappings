@@ -80,8 +80,8 @@
 			                function_layer {
                         bindings = <
    &kp ESC   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5    &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp BSPC
-   &kp TAB   &kp F11 &kp F12 &kp D &kp F &kp G     &cp C_BRI_DEC &cp C_VOL_DOWN &cp C_VOL_UP &cp C_BRI_INC &kp SEMI &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp V &bootloader   &bootloader &cp CMUTE  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+   &kp TAB   &kp F11 &kp F12 &kp D &kp F &kp G     &cp C_BRI_DN &cp C_VOL_DN &cp C_VOL_UP &cp C_BRI_UP &kp SEMI &kp SQT
+   &kp LCTRL &kp Z &kp X &kp C &kp V &bootloader   &bootloader &cp C_MUTE  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                   &kp RET &to 0 &kp SPACE   	   &kp SPACE &to 0 &kp RALT
                         >;
                 };
